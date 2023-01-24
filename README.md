@@ -4,7 +4,7 @@
 
 ##  table of contents
 
-1. [import](README.md#-import)
+1. [get started](#import)
 
 ## import
 
