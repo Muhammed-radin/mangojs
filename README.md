@@ -1,25 +1,26 @@
-# ela.js 
+# mango.js 
 
- ela.js is a canvas 2d graphic libary for javascript.It is mainly used to make games.
+ mango.js is a canvas 2d graphic libary for javascript.It is mainly used to make games.
 
 ##  table of contents
 
-1. [get started](#import)
+1. [get started](#get%20started)
 
-## import
 
-- import "ela.js" file
+## get started
+
+- import "mango.js" file
   
-  in html: *add in head tag*
+  in html: add in head tag
   ```html 
   <head>
     {... your codes ...}
     
-    <script src="ela.js" type="text/javascript"></script>
+    <script src="mango.js" type="text/javascript"></script>
   </head>
   ```
 
   in javascript: 
   ```js
-    import ela from "/ela.js"
+    import mango from "/mango.js"
   ```
