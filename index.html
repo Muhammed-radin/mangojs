@@ -18,6 +18,8 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.5.0/semantic.min.js" integrity="sha512-Xo0Jh8MsOn72LGV8kU5LsclG7SUzJsWGhXbWcYs2MAmChkQzwiW/yTQwdJ8w6UA9C6EVG18GHb/TrYpYCjyAQw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <link rel="stylesheet" href="style.css">
   
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/prism.min.js" integrity="sha512-UOoJElONeUNzQbbKQbjldDf9MwOHqxNz49NNJJ1d90yp+X9edsHyJoAs6O4K19CZGaIdjI5ohK+O2y5lBTW6uQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/themes/prism.min.css" integrity="sha512-/mZ1FHPkg6EKcxo0fKXF51ak6Cr2ocgDi5ytaTBjsQZIH/RNs6GF6+oId/vPe3eJB836T36nXwVh/WBl/cWT4w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <script src="mango.js"></script>
 </head>
 
@@ -26,6 +28,7 @@
     <i class="bars icon" onclick="menu()"></i>
     <h3>Mango.js</h3>
     <div class="right-bar">
+      <small> v1.7 </small>
       <i class="github icon"></i>
     </div>
   </nav>
@@ -70,10 +73,24 @@
         <p>create canvas and give a id for canvas</p>
         <img src="images/html-canvas.png" alt="">
         <br>
-        <p>check the mango.js <hl>dev_version</hl> is <hl>1.7</hl>, Or many features of mango.js may be missed. So use the last <hl>dev_version </hl></p>
         <br>
-        <p><b>how to understand dev_version ?</b></p>
-        <p></p>
+        <p>check the mango.js <hl>dev_version</hl> is <hl>1.7</hl>, Or many features of mango.js may be missed. So use the last <hl>dev_version </hl> try this code</p>
+        <br>
+        <pre><code class="language-javascript">canvas.dev_version == 1.7 ? null : alert("try latest version")</code></pre>
+        <br>
+        <b>Start Demo Project for Basics</b>
+        <p>add code to your script.js</p>
+        <pre>
+          <code class="language-javascript" onclick="basic(this)">
+
+var cnv = canvas.setCanvas(document.getElementById('c'));
+var c = cnv.elem;
+var ctx = cnv.ctx;
+var app = canvas.app;
+var entity = canvas.entity;
+var group = canvas.entityGroup;
+          </code>
+        </pre>
       </div>
     </div>
   </div>

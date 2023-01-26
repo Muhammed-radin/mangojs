@@ -1,5 +1,3 @@
-
-
 function $(q) {
   return document.querySelector(q)
 }
@@ -41,3 +39,4 @@ function menu() {
 
   menuCode += 1;
 }
+

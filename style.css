@@ -75,10 +75,16 @@ hr {
 }
 
 pre,
-code {
+code, code *{
   margin: 0 !important;
   padding: 0 !important;
   border: 0;
+ 
+  box-shadow: 0 0 0 transparent;
+}
+
+pre::-webkit-scrollbar,code::-webkit-scrollbar {
+  height: 1px;
 }
 
 img {
