@@ -86,6 +86,16 @@ img {
   height: 60%
 }
 
+hl {
+  padding: 0.15rem;
+  font-family: monospace;
+  font-weight: bold;
+  background: #eee;
+  border-radius: 3px;
+  font-size: 11px;
+  margin: 0 0.1rem;
+}
+
 @media screen and (max-width: 600px) {
   .contents {
     width: 95%;
