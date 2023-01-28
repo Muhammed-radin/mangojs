@@ -17,16 +17,20 @@
   <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.5.0/semantic.min.js" integrity="sha512-Xo0Jh8MsOn72LGV8kU5LsclG7SUzJsWGhXbWcYs2MAmChkQzwiW/yTQwdJ8w6UA9C6EVG18GHb/TrYpYCjyAQw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <link rel="stylesheet" href="style.css">
-  
+
   <link rel="shortcut icon" type="image/x-icon" href="logo.png">
-  
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/prism.min.js" integrity="sha512-UOoJElONeUNzQbbKQbjldDf9MwOHqxNz49NNJJ1d90yp+X9edsHyJoAs6O4K19CZGaIdjI5ohK+O2y5lBTW6uQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <!link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/themes/prism.min.css" integrity="sha512-/mZ1FHPkg6EKcxo0fKXF51ak6Cr2ocgDi5ytaTBjsQZIH/RNs6GF6+oId/vPe3eJB836T36nXwVh/WBl/cWT4w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/themes/prism-tomorrow.min.css" integrity="sha512-kSwGoyIkfz4+hMo5jkJngSByil9jxJPKbweYec/UgS+S1EgE45qm4Gea7Ks2oxQ7qiYyyZRn66A9df2lMtjIsw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
   <script src="mango.js"></script>
 </head>
 
 <body>
+  <div class="load">
+    <div class="bar"></div>
+  </div>
   <nav class="nav">
     <i class="bars icon" onclick="menu()"></i>
     <h3>Mango.js</h3>
@@ -72,7 +76,7 @@
         <p>Firstly you need download Mango.js and Import Mango.js in your project <a href="https://Muhammed-radin.github.io/mangojs/mango.js" download="Mango.js">Click to Download</a></p>
         <br>
         <p>and add code giving below in your html head tag</p>
-        <img src="images/html-use.png" >
+        <img src="images/html-use.png">
         <p>create canvas and give a id for canvas</p>
         <img src="images/html-canvas.png" alt="">
         <br>
@@ -82,10 +86,14 @@
         <pre><code class="language-javascript"> canvas.dev_version == 1.7 ? null : alert("try latest version")</code></pre>
         <br>
         <b>Start Demo Project for Basics</b>
-        <p>add code to your script.js</p>
+        <p>the <hl>Mango</hl> is returning new mango object, if you also created mango object, add the canvas element to mango object. <br>example:-</p>
         <pre>
           <code class="language-javascript" onclick="basic(this)">
 
+ // creating new mango application
+ var canvas = Mango()
+ 
+ // setting canvas element to mango object
  var cnv = canvas.setCanvas(document.getElementById('c'));
  var c = cnv.elem;
  var ctx = cnv.ctx;
