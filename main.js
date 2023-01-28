@@ -63,6 +63,8 @@ var mainApp = Mango()
 htmlReplacerAll(1.7, mainApp.dev_version)
 htmlReplacerAll(/{{version}}/g, mainApp.dev_version)
 
+//htmlReplacerAll(/{{{mango}}}/g, mainApp)
+
 var rect = Mango()
 rect.setCanvas($('#rect'))
 new rect.entity({
@@ -70,3 +72,15 @@ new rect.entity({
   height: 50
 })
 rect.repeatRender()
+
+
+$('.contents').querySelectorAll('p').forEach((el, ind)=>{
+  var txt = el.innerText
+  var convertedTxt = txt.replaceAll(' ', '')
+  console.log(convertedTxt);
+  
+  el.onclick = () =>{
+    window.location.href = '#'+convertedTxt
+  }
+})
+

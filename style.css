@@ -2,6 +2,11 @@ body {
   margin: 0;
 }
 
+* {
+  scroll-behavior: smooth;
+  
+}
+
 p,
 h1,
 h2,
@@ -26,6 +31,8 @@ nav {
   top: 0;
   position: sticky;
   position: -webkit-sticky;
+  z-index: 999;
+  left: 0;
 }
 
 nav .bars {

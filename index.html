@@ -146,7 +146,7 @@
  }</code>
         </pre>
         <br>
-        <p>try the code</p>
+        <p>try this code</p>
         <pre>
           <code class="language-markup">
 
@@ -202,8 +202,40 @@
         <br>
         <p>output</p>
         <canvas id="rect" style="border: 2px solid #444">
-          
+
         </canvas>
+      </div>
+      <div id="SettingCanvas" mt>
+        <h3># Setting Canvas</h3>
+        <hr>
+        <p>the <hl>Mango</hl> is returning new mango object, if you also created mango object, add the canvas element to mango object. <br>example:-</p>
+        <pre>
+          <code class="language-javascript" onclick="basic(this)">
+
+ // creating new mango application
+ var canvas = Mango()
+ 
+ // setting canvas element to mango object
+ var cnv = canvas.setCanvas(document.getElementById('c'));
+ var c = cnv.elem;
+ var ctx = cnv.ctx;
+ var app = canvas.app;
+          </code>
+        </pre>
+      </div>
+      <div id="Application" mt>
+        <h3># Application</h3>
+        <hr>
+        <p>application support and helping the canvas, this is using named <hl>canvas.app</hl>,<hl>canvas.app</hl> helping for you easily use to mango.js objects</p>
+        <p><b>application api</b></p>
+        <ul>
+          <li><a href="#">count(from, to, callback, howMany?, speed?) <hl>function</hl></a></li>
+          <li><a href="#">css(string) <hl>function</hl></a></li>
+          <li><a href="#">Vec2(x, y) <hl>class</hl></a></li>
+          <li><a href="#">randomColor(light?) <hl>function</hl></a></li>
+          <li><a href="#">randomNumberOnly(from, start) <hl>function</hl></a></li>
+                    <li><a href="#">update <hl>property</hl></a></li>
+        </ul>
       </div>
     </div>
   </div>
