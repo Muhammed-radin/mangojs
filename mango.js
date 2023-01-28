@@ -1,4 +1,4 @@
-function Application() {
+function Mango() {
   var canvas = {
     canvasElem: "NO_CANVAS_FOUND",
     canvasCtx: "NO_CTX_FOUND",
