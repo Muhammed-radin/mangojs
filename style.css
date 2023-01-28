@@ -126,6 +126,7 @@ hl {
   z-index: 99999;
   top: 0;
   left: 0;
+  background: #fff;
 }
 
 .bar {
@@ -137,4 +138,10 @@ hl {
   border: 5px solid #333;
   border-radius: 50%;
   transform: translate(-50%, -50%)
+}
+
+.load p {
+  position: absolute;
+  bottom: 3px;
+  right: 3px;
 }

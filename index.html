@@ -30,6 +30,7 @@
 <body>
   <div class="load">
     <div class="bar"></div>
+    <p>Loading Version {{version}}</p>
   </div>
   <nav class="nav">
     <i class="bars icon" onclick="menu()"></i>
@@ -98,10 +99,111 @@
  var c = cnv.elem;
  var ctx = cnv.ctx;
  var app = canvas.app;
- var entity = canvas.entity;
- var group = canvas.entityGroup;
           </code>
         </pre>
+        <br>
+        <p>use to easy way the entity and entity groups, entity and entity groups is class</p>
+        <pre>
+          <code class="language-javascript">
+
+ var entity = canvas.entity;
+ var group = canvas.entityGroup;</code>
+        </pre>
+        <br>
+        <p>creating a rectangle</p>
+        <pre>
+          <code class="language-javascript">
+            
+ var rectangle = new entity({
+   type: "rect",
+   x:0,
+   y: 0,
+   width: 50,
+   height: 50
+ })</code>
+        </pre>
+
+        <p><b>Render canvas Entities</b></p>
+        <br>
+        <p>canvas rendering with <hl>render()</hl> but <hl>render</hl> function is only one time rendering. so use <hl>repeatRender()</hl>, repeatRender is canvas clear and rendering, so you can make animation and use <hl>app.update</hl>
+        </p>
+
+        <pre>
+          <code class="language-javascript">
+
+ // one time render
+ canvas.render()
+ 
+ // clear canvas 
+ canvas.clear()
+ 
+ // loop render
+ canvas.repeatRender()
+ 
+ // if canvas is update 
+ app.update = function (){
+  // your codes
+ }</code>
+        </pre>
+        <br>
+        <p>try the code</p>
+        <pre>
+          <code class="language-markup">
+
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+  &lt;title&gt;demo&lt;/title&gt;
+
+  &lt;script src="mango.js"&gt;&lt;/script&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+  &lt;canvas id="myCanvas"&gt;&lt;/canvas&gt;
+
+  &lt;script&gt;
+    // creating new mango application
+    var canvas = Mango()
+
+    // setting canvas element to mango object
+    var cnv = canvas.setCanvas(document.getElementById('c'));
+    var c = cnv.elem;
+    var ctx = cnv.ctx;
+    var app = canvas.app;
+
+    var entity = canvas.entity;
+    var group = canvas.entityGroup;
+
+    // creating a rectangle
+    var rectangle = new entity({
+      type: "rect",
+      x: 0,
+      y: 0,
+      width: 50,
+      height: 50
+    })
+
+    // loop render
+    canvas.repeatRender()
+
+    // if canvas is update
+    app.update = function() {
+      // your codes
+    }
+  &lt;/script&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;
+          </code>
+        </pre>
+        <br>
+        <p>output</p>
+        <canvas id="rect" style="border: 2px solid #444">
+          
+        </canvas>
       </div>
     </div>
   </div>
