@@ -24,7 +24,7 @@ function Mango() {
     },
     idStorage: [],
     version: 1.0,
-    dev_version: 1.8,
+    dev_version: 1.9,
     setWidth: function(w, h) {
       this.canvasElem.width = w;
       this.canvasElem.height = h;
@@ -558,8 +558,17 @@ function Mango() {
           top: this.y,
           left: this.x,
           height: this.height,
-          width: this.height,
+          width: this.width,
         }
+        
+        setInterval(() => {
+          element = {
+            top: this.y,
+            left: this.x,
+            height: this.height,
+            width: this.width,
+          }
+        })
 
         canvas.canvasElem.addEventListener(type, function(e) {
           switch (type) {
@@ -616,8 +625,17 @@ function Mango() {
           top: this.y,
           left: this.x,
           height: this.height,
-          width: this.height,
+          width: this.width,
         }
+        
+        setInterval(() => {
+          element = {
+            top: this.y,
+            left: this.x,
+            height: this.height,
+            width: this.width,
+          }
+        })
 
         canvas.canvasElem.removeEventListener(type, function(e) {
           switch (type) {
