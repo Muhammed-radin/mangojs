@@ -1,4 +1,4 @@
 
 ![mango](mango.logo.png)
 
- mango.js is a canvas 2d graphic libary for javascript.It is mainly used to make games. [documentation >>](https://muhammed-radin.github.io/mangojs/)
+ mango.js is a canvas 2d graphic libary for javascript.It is mainly used to make games. [documentation](https://muhammed-radin.github.io/mangojs/)
