@@ -73,6 +73,22 @@ new rect.entity({
 })
 rect.repeatRender()
 
+var rect1 = Mango()
+rect1.setCanvas($('#rectCnv'))
+new rect1.entity({
+  width: 50,
+  height: 50
+})
+
+new rect1.entity({
+  x: 70,
+  y: 0,
+  fill: null,
+  width: 50,
+  height: 50,
+  stroke: '#555'
+})
+rect1.repeatRender()
 
 $('.contents').querySelectorAll('p').forEach((el, ind)=>{
   var txt = el.innerText

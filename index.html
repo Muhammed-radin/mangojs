@@ -247,23 +247,40 @@
           <hl>entity</hl>is sum to html element,see the api below
         </p>
         <ul>
-          <li><a href="#">type <hl>String</hl></a><p>contents: rect, circle, line, path, image, roundRect, ellipse, text, bezierLine, quadraticLine, clear</p></li>
-          <li><a href="#">name <hl>String</hl></a><p>name is not important,  but using for identification</p></li>
+          <li><a href="#">type <hl>String</hl></a>
+            <p>contents: rect, circle, line, path, image, roundRect, ellipse, text, bezierLine, quadraticLine, clear</p>
+          </li>
+          <li><a href="#">name <hl>String</hl></a>
+            <p>name is not important, but using for identification</p>
+          </li>
           <li><a href="#">x <hl>Number</hl></a></li>
           <li><a href="#">y <hl>Number</hl></a></li>
           <li><a href="#">width <hl>Number</hl></a></li>
           <li><a href="#">height <hl>Number</hl></a></li>
           <li><a href="#">fill <hl>Color</hl></a></li>
           <li><a href="#">stroke <hl>Color</hl></a></li>
-          <li><a href="#">render <hl>Boolean</hl></a><p>render is equal to disable and enable</p></li>
-          <li><a href="#">scale <hl>Vec2</hl></a><p>Vec2 example: <hl>{x: 1, y: 1}</hl></p></li>
+          <li><a href="#">render <hl>Boolean</hl></a>
+            <p>render is equal to disable and enable</p>
+          </li>
+          <li><a href="#">scale <hl>Vec2</hl></a>
+            <p>Vec2 example: <hl>{x: 1, y: 1}</hl>
+            </p>
+          </li>
           <li><a href="#">translate <hl>Vec2</hl></a></li>
           <li><a href="#">rotate <hl>Angle</hl></a></li>
-          <li><a href="#">skew <hl>Vec2</hl> (bugs found)</a> <p>some entities disabled skew</p></li>
-          <li><a href="#">on <hl>Function</hl></a> <p>events: click, touchmove,  touchstart,  touchend, mouseup, mousemove, mousedown</p></li>
-          <li><a href="#">off <hl>Function</hl></a> <p>events: click, touchmove,  touchstart,  touchend, mouseup, mousemove, mousedown</p></li>
+          <li><a href="#">skew <hl>Vec2</hl> (bugs found)</a>
+            <p>some entities disabled skew</p>
+          </li>
+          <li><a href="#">on <hl>Function</hl></a>
+            <p>events: click, touchmove, touchstart, touchend, mouseup, mousemove, mousedown</p>
+          </li>
+          <li><a href="#">off <hl>Function</hl></a>
+            <p>events: click, touchmove, touchstart, touchend, mouseup, mousemove, mousedown</p>
+          </li>
           <li><a href="#">imageURl <hl>String</hl></a></li>
-          <li><a href="#">path <hl>String</hl></a><p>svg path</p></li>
+          <li><a href="#">path <hl>String</hl></a>
+            <p>svg path</p>
+          </li>
           <li><a href="#">strokeWidth <hl>Number</hl></a></li>
           <li><a href="#">bx <hl>Number</hl></a></li>
           <li><a href="#">by <hl>Number</hl></a></li>
@@ -271,16 +288,24 @@
           <li><a href="#">dy <hl>Number</hl></a></li>
           <li><a href="#">id <hl>Number</hl> (auto generate)</a></li>
           <li><a href="#">radius <hl>Number</hl></a></li>
-          <li><a href="#">arcLevel <hl>Number</hl></a><p>use for edge smooth or hard</p></li>
-          <li><a href="#">script <hl>String</hl></a><p>script running on rendering</p></li>
-          <li><a href="#">afterScript <hl>Boolean</hl></a><p>script run before render or after render</p></li>
+          <li><a href="#">arcLevel <hl>Number</hl></a>
+            <p>use for edge smooth or hard</p>
+          </li>
+          <li><a href="#">script <hl>String</hl></a>
+            <p>script running on rendering</p>
+          </li>
+          <li><a href="#">afterScript <hl>Boolean</hl></a>
+            <p>script run before render or after render</p>
+          </li>
           <li><a href="#">afterClip <hl>Boolean</hl> (bugs found) </a></li>
           <li><a href="#">shadow <hl>Number</hl></a></li>
           <li><a href="#">shadowColor <hl>Color</hl></a></li>
           <li><a href="#">shadowX <hl>Number</hl></a></li>
           <li><a href="#">shadowY <hl>Number</hl></a></li>
           <li><a href="#">text <hl>String</hl></a></li>
-          <li><a href="#">textMax <hl>Number</hl></a><p>textWidth</p></li>
+          <li><a href="#">textMax <hl>Number</hl></a>
+            <p>textWidth</p>
+          </li>
           <li><a href="#">font <hl>String || CssFontFamily</hl></a></li>
           <li><a href="#">fontSize <hl>Number</hl></a></li>
           <li><a href="#">dWidth <hl>Number</hl></a></li>
@@ -289,8 +314,44 @@
           <li><a href="#">number <hl>Number</hl> (don't change this number)</a></li>
           <li><a href="#">physics <hl>Object</hl> (while crashing)</a></li>
           <li><a href="#">tags <hl>Array</hl></a></li>
-          <li><a href="#">imageSizeAuto <hl>Boolean</hl></a><p>auto width and highet mange for image</p></li>
+          <li><a href="#">imageSizeAuto <hl>Boolean</hl></a>
+            <p>auto width and highet mange for image</p>
+          </li>
         </ul>
+      </div>
+      <div id="Rectangle" mt>
+        <h3># Rectangle</h3>
+        <hr>
+        <p>To draw a rectangle, specify the x and y coordinates (upper-left corner) and the height and width of the rectangle</p>
+        <pre>
+          <code class="language-javascript">
+
+ var rectangle = new entity({
+   type: "rect",
+   x:0,
+   y: 0,
+   width: 50,
+   height: 50
+ })
+ 
+ var rectangleStroke = new entity({
+   type: "rect",
+   x: 70,
+   y: 0,
+   width: 50,
+   height: 50,
+   fill: null,
+   stroke: "#555"
+ })
+ 
+ canvas.render()</code>
+        </pre>
+        <p><b>output:</b></p>
+        <canvas id="rectCnv"></canvas>
+      </div>
+      <div id="Circle&Ellipse" mt>
+        <h3># Circle & Ellipse</h3>
+        <hr>
       </div>
     </div>
   </div>
